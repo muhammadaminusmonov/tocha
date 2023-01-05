@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media screen and (min-width: 427px) and (max-width: 769px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    .container {
+        max-width: 374px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}

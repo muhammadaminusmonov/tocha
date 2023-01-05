@@ -1,0 +1,170 @@
+.telegram--position {
+    position: relative;
+}
+
+.telegram {
+    padding-bottom: 121px;
+    display: flex;
+    flex-direction: column;
+    color: $most-text-color;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    h1 {
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 64px;
+    }
+    .telegram__bg--img {
+        background-image: url(../images/lines.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 104px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 240px;
+    }
+    .telegram__wrapper {
+        max-width: 100%;
+        display: flex;
+        gap: 170px;
+        overflow-x: scroll;
+        .telegram__card {
+            max-width: 250px;
+            min-width: 208px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span {
+                z-index: 1;
+                border-radius: 50%;
+                width: 72px;
+                height: 72px;
+                background-color: #F1E4FF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $title-color-rarely;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 30px;
+            }
+            h3 {
+                margin-top: 16px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+            }
+            p {
+                margin-top: 4px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            img {
+                margin-top: 56px;
+                max-width: 100%;
+                max-height: 471.83px;
+            }
+        }
+        .telegram__card--margin {
+            margin-top: 56px;
+        }
+        .telegram__card--middle {
+            margin-top: 126px;
+        }
+    }
+    .telegram__scroll {
+        @include scroll;
+    }
+}
+
+.telegram__bg {
+    background-image: url(../images/main\ bg.png);
+    width: 100%;
+    height: 581px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 499px;
+    z-index: -1;
+}
+
+@media screen and (min-width: 427px) and (max-width: 769px) {
+    .container {
+        max-width: 768px;
+    }
+    .telegram {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .telegram__bg--img {
+            display: none;
+        }
+        .telegram__wrapper {
+            overflow-x: scroll;
+            gap: 30px;
+            .telegram__card {
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                img {
+                    width: 100%;
+                    height: 422px;
+                }
+            }
+            .telegram__card--middle,
+            .telegram__card--margin {
+                margin-top: 39px;
+            }
+        }
+        .telegram__scroll {
+            display: none;
+        }
+    }
+    .telegram__bg {
+        height: 316px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    .container {
+        max-width: 374px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .telegram {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .telegram__bg--img {
+            display: none;
+        }
+        .telegram__wrapper {
+            overflow-x: scroll;
+            gap: 30px;
+            .telegram__card {
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                img {
+                    width: 100%;
+                    height: 422px;
+                }
+            }
+            .telegram__card--middle,
+            .telegram__card--margin {
+                margin-top: 47px;
+            }
+        }
+    }
+    .telegram__bg {
+        height: 361px;
+    }
+}

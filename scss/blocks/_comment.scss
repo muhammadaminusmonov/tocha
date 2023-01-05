@@ -1,0 +1,153 @@
+.comment__bg {
+    background: #F2F7FF80;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 80px;
+    color: $most-text-color;
+    .comment__bg--img {
+        background-image: url(../images/Quote\ Mark.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 143px;
+        height: 121px;
+        position: absolute;
+        top: 0;
+        right: 40px;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 64px;
+    }
+    &__wrapper {
+        margin-top: 48px;
+        display: flex;
+        gap: 30px;
+        max-width: 100%;
+        overflow-x: scroll;
+        .comment__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 540px;
+            .comment__content {
+                background-color: #ffffff;
+                color: #18191F;
+                padding: 32px 32px 56px 32px;
+                position: relative;
+                border-radius: 6px;
+                text-align: center;
+                box-shadow: 5px 0 20px -10px #C4C4C4;
+                h4 {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                p {
+                    margin-top: 8px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                span {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    background: #ffffff;
+                }
+            }
+            .comment__author {
+                margin-top: 28px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                img {
+                    width: 56px;
+                    height: 56px;
+                }
+                h5 {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .comment__scroll {
+        margin-top: 32px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        span {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #685ED6;
+        }
+        span:hover {
+            background-color: #685ED6;
+        }
+    }
+}
+
+@media screen and (min-width: 427px) and (max-width: 769px) {
+    .container {
+        max-width: 768px;
+    }
+    .comment {
+        padding: 60px 40px;
+        .comment__bg--img {
+            top: 16px;
+            width: 111.51px;
+            height: 95px;
+        }
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    .container {
+        max-width: 374px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .comment {
+        padding-top: 60px;
+        padding-bottom: 51px;
+        .comment__bg--img {
+            top: 16px;
+            right: 22px;
+            width: 53.76px;
+            height: 46px;
+        }
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .comment__wrapper {
+            .comment__card {
+                min-width: 328px;
+                .comment__content {
+                    padding: 32px 20px 47px 20px;
+                }
+            }
+        }
+    }
+}

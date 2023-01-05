@@ -1,0 +1,73 @@
+.footer__bg {
+    background: #1D2530;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 104px;
+    img {
+        width: 87px;
+        height: 93px;
+    }
+    .footer__wrapper {
+        display: flex;
+        gap: 126px;
+    }
+    .footer__wrapper--link {
+        max-width: 160px;
+        display: flex;
+        flex-direction: column;
+        h4 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #F4F5F7;
+        }
+        div {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #EEEFF4;
+        }
+    }
+    .footer--telegram {
+        max-width: 160px;
+    }
+    .footer--Поддержка {
+        max-width: 191px;
+    }
+}
+
+.footer__author {
+    background-color: #141B23;
+    margin-top: 78px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    a {
+        padding: 0 40px;
+        color: #D9DBE1;
+        width: 1110px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    .container {
+        max-width: 374px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .footer {
+        padding-top: 60px;
+        .footer__wrapper {
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
