@@ -92,7 +92,7 @@
     z-index: -1;
 }
 
-@media screen and (min-width: 427px) and (max-width: 769px) {
+@media screen and (min-width: 735px) and (max-width: 1024px) {
     .container {
         max-width: 768px;
     }
@@ -131,7 +131,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 426px) {
+@media screen and (min-width: 320px) and (max-width: 734px) {
     .container {
         max-width: 374px;
         padding-left: 22px;
