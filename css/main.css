@@ -83,7 +83,7 @@ img {
   }
 }
 .header__bg {
-  background-image: url(../images/header\ bg.png);
+  background-image: url(../images/header_bg.jpg);
   max-width: 100%;
   height: 809px;
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ img {
   position: absolute;
   top: 167px;
   right: 0;
-  background-image: url(../images/hr\ bg\ img.png);
+  background-image: url(../images/header_bg_img.svg);
   background-size: cover;
   width: 725px;
   height: 583px;
@@ -512,10 +512,8 @@ img {
   margin-top: 40px;
   display: flex;
   gap: 30px;
-  overflow: scroll;
   max-width: 100%;
-  height: 390px;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 .tariff .tariff__wrapper .tariff__card {
   max-width: 330px;
@@ -598,6 +596,8 @@ img {
   }
   .tariff .tariff__wrapper {
     margin-top: 36px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    overflow-x: scroll;
   }
   .tariff .tariff__scroll {
     display: none;
@@ -639,6 +639,8 @@ img {
     line-height: 28px;
   }
   .tariff .tariff__wrapper {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    overflow-x: scroll;
     margin-top: 36px;
   }
   .tariff .tariff__scroll {
@@ -681,7 +683,7 @@ img {
   line-height: 64px;
 }
 .telegram .telegram__bg--img {
-  background-image: url(../images/lines.png);
+  background-image: url(../images/lines.svg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -695,7 +697,6 @@ img {
   max-width: 100%;
   display: flex;
   gap: 170px;
-  overflow-x: scroll;
 }
 .telegram .telegram__wrapper .telegram__card {
   max-width: 250px;
@@ -763,7 +764,7 @@ img {
 }
 
 .telegram__bg {
-  background-image: url(../images/main\ bg.png);
+  background-image: url(../images/telegram_bg.jpg);
   width: 100%;
   height: 581px;
   background-repeat: no-repeat;
@@ -777,6 +778,9 @@ img {
   .container {
     max-width: 768px;
   }
+  .telegram {
+    padding-bottom: 50px;
+  }
   .telegram h1 {
     font-size: 32px;
     line-height: 40px;
@@ -785,7 +789,6 @@ img {
     display: none;
   }
   .telegram .telegram__wrapper {
-    overflow-x: scroll;
     gap: 30px;
   }
   .telegram .telegram__wrapper .telegram__card p {
@@ -873,7 +876,6 @@ img {
   display: flex;
   gap: 30px;
   max-width: 100%;
-  overflow-x: scroll;
 }
 .comment__wrapper .comment__card {
   display: flex;
@@ -953,6 +955,9 @@ img {
   .comment {
     padding: 60px 40px;
   }
+  .comment .comment__wrapper {
+    overflow-x: scroll;
+  }
   .comment .comment__bg--img {
     top: 16px;
     width: 111.51px;
@@ -983,6 +988,9 @@ img {
     font-size: 32px;
     line-height: 40px;
   }
+  .comment .comment__wrapper {
+    overflow-x: scroll;
+  }
   .comment .comment__wrapper .comment__card {
     min-width: 328px;
   }
@@ -996,7 +1004,7 @@ img {
 }
 
 .email {
-  background-image: url(../images/BG\ Mask.png);
+  background-image: url(../images/email_bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;

@@ -16,7 +16,7 @@
         line-height: 64px;
     }
     .telegram__bg--img {
-        background-image: url(../images/lines.png);
+        background-image: url(../images/lines.svg);
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -30,7 +30,6 @@
         max-width: 100%;
         display: flex;
         gap: 170px;
-        overflow-x: scroll;
         .telegram__card {
             max-width: 250px;
             min-width: 208px;
@@ -82,7 +81,7 @@
 }
 
 .telegram__bg {
-    background-image: url(../images/main\ bg.png);
+    background-image: url(../images/telegram_bg.jpg);
     width: 100%;
     height: 581px;
     background-repeat: no-repeat;
@@ -97,6 +96,7 @@
         max-width: 768px;
     }
     .telegram {
+        padding-bottom: 50px;
         h1 {
             font-size: 32px;
             line-height: 40px;
@@ -105,7 +105,6 @@
             display: none;
         }
         .telegram__wrapper {
-            overflow-x: scroll;
             gap: 30px;
             .telegram__card {
                 p {

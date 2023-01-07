@@ -30,7 +30,6 @@
         display: flex;
         gap: 30px;
         max-width: 100%;
-        overflow-x: scroll;
         .comment__card {
             display: flex;
             flex-direction: column;
@@ -110,6 +109,9 @@
     }
     .comment {
         padding: 60px 40px;
+        .comment__wrapper {
+            overflow-x: scroll;
+        }
         .comment__bg--img {
             top: 16px;
             width: 111.51px;
@@ -142,6 +144,7 @@
             line-height: 40px;
         }
         .comment__wrapper {
+            overflow-x: scroll;
             .comment__card {
                 min-width: 328px;
                 .comment__content {
